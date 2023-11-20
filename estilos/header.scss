@@ -5,3 +5,27 @@ header {
     text-align: center;
     padding: 1em;
 }
+
+header {
+    display: flex;
+    div{
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 4rem;
+    }
+
+    img {
+        max-width: 50px; /* Adjust the max-width as needed */
+        margin-right: 1rem; /* Adjust the margin as needed */
+        margin-left: 2rem;
+        border-radius: 50%; /* Optional: Apply border-radius for a circular logo */
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
