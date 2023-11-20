@@ -1,0 +1,38 @@
+/* portfolio.scss */
+
+.portfolio-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+    width: 27rem;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease-out;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.portfolio-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.portfolio-item:hover img,
+.portfolio-item:hover video {
+    transform: scale(1.01);
+    opacity: 2;
+}
