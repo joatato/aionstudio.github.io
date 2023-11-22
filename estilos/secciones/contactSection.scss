@@ -5,7 +5,7 @@
     padding: 50px 0; // Ajusta el espacio según sea necesario
   
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       font-size: 2em; // Ajusta el tamaño según sea necesario
     }
   
@@ -40,6 +40,13 @@
   
         &:hover {
           background-color: #006699; // Cambia el color al pasar el mouse, ajusta según sea necesario
+        }
+      }
+      .gmail-button {
+        background-color: rgb(205, 10, 10); // Color de fondo del botón de Telegram, ajusta según sea necesario
+  
+        &:hover {
+          background-color: rgb(175, 13, 13); // Cambia el color al pasar el mouse, ajusta según sea necesario
         }
       }
     }
