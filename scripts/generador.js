@@ -124,7 +124,7 @@ function generatePortfolioItems(category) {
 }
 
 // Llama a la función para generar las imágenes
-filterImages("animaciones")
+filterImages("bannerPublicidad")
 
 
 
