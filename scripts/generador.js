@@ -1,33 +1,22 @@
 // Rutas de las imágenes
 const imageBannerPublicidad = [
+    "JARRON PARA LAPICES 1.jpg",
+    "TERMO 2.2239.png",
+    "TERMO CON QUARZO - BOTELLAS ACOSTADAS.png",
+    "TERMO CON QUARZO 4 botellas.jpg",
+    "TERMO CON QUARZO JARRON - bajo contraste.png",
+    "TERMO CON QUARZO.2178.png",
     "ORIGINAL 3.png",
     "ORIGINAL 6.png",
     "ORIGINAL 8.png",
     "ORIGINAL 9.png",
-    /* "5.png", */
-    /* "Ceramica.png", */
-    "JARRON PARA LAPICES 1.jpg",
-    /* "JARRON PARA LAPICES ILUMINADO 2.png", */
-    /* "JARRON PARA LAPICES.2010.png", */
-    /* "PLIEGUE PARA FOTOS.2806.png", */
-    "TERMO 2.2239.png",
-    "TERMO CON QUARZO - BOTELLAS ACOSTADAS.png",
-    "TERMO CON QUARZO 4 botellas.jpg",
-    "TERMO CON QUARZO JARRON - bajo contraste.png",
-    "TERMO CON QUARZO.2178.png",
 ];
-const imageModel3D = [
+const scene = [
+    "2.webp",
     "5.png",
-    /* "Ceramica.png", */
-    "JARRON PARA LAPICES 1.jpg",
+    "3.png",
     "JARRON PARA LAPICES ILUMINADO 2.png",
-    /* "JARRON PARA LAPICES.2010.png", */
     "PLIEGUE PARA FOTOS.2806.png",
-    "TERMO 2.2239.png",
-    "TERMO CON QUARZO - BOTELLAS ACOSTADAS.png",
-    "TERMO CON QUARZO 4 botellas.jpg",
-    "TERMO CON QUARZO JARRON - bajo contraste.png",
-    "TERMO CON QUARZO.2178.png",
 ];
 const videoAnimacion = [
     "2.mp4",
@@ -64,13 +53,18 @@ const fotoMontages = [
 var imagePaths = [];
 
 function filterImages(category) {
+    document.getElementById("portfolioContainer").scrollLeft = 0;
+    document.querySelectorAll('.category-buttons button').forEach(btn => {
+        btn.style.backgroundColor = ''; // Limpiar el color de fondo
+    });
+    document.getElementById(category).style.backgroundColor = '#380f20';
     switch (category) {
         case "animaciones":
             imagePaths = videoAnimacion;
-            
+
             break;
-        case "modelado3D":
-            imagePaths = imageModel3D;
+        case "scene":
+            imagePaths = scene;
             break;
         case "bannerPublicidad":
             imagePaths = imageBannerPublicidad;
@@ -137,15 +131,9 @@ document.getElementById('animaciones').addEventListener('click', function () {
 document.getElementById('bannerPublicidad').addEventListener('click', function () {
     filterImages('bannerPublicidad');
 });
-/* document.getElementById('diseñoInterioresExteriores').addEventListener('click', function () {
-    filterImages('diseñoInterioresExteriores');
-});
-document.getElementById('fotoMontages').addEventListener('click', function () {
-    filterImages('fotoMontages');
-});
-document.getElementById('modelado3D').addEventListener('click', function () {
-    filterImages('modelado3D');
-}); */
 document.getElementById('modelado3DBanner').addEventListener('click', function () {
     filterImages('modelado3DBanner');
+});
+document.getElementById('scene').addEventListener('click', function () {
+    filterImages('scene');
 });

@@ -1,9 +1,10 @@
 /* header.css */
 header {
-    background-color: #1c1c1c;
-    color: #fff;
+    background-color: $color-primary;
+    color: $color-white;
     text-align: center;
-    padding: 1em;
+    padding: .3em;
+    align-items: center;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     }
 
     img {
-        max-width: 50px; /* Adjust the max-width as needed */
+        max-width: 80px; /* Adjust the max-width as needed */
         margin-right: 1rem; /* Adjust the margin as needed */
         margin-left: 2rem;
         border-radius: 50%; /* Optional: Apply border-radius for a circular logo */

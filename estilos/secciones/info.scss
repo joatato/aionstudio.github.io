@@ -13,11 +13,12 @@
             margin-right: 1rem;
             margin-left: 1rem;
             padding: 2em;
-            background-color: #fdf8ef;
+            background-color: $color-secondary;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
             overflow: hidden;
             margin-top: 1rem;
+            color: $color-white;
         }
     }
 

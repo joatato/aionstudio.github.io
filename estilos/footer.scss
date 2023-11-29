@@ -1,7 +1,7 @@
 /* footer.css */
 footer {
-    background-color: #1c1c1c;
-    color: #fff;
+    background-color: $color-primary;
+    color: $color-white;
     text-align: center;
     padding: 1em;
     position: relative;
@@ -16,7 +16,7 @@ footer {
 .social-icons a {
     display: inline-block;
     margin: 0 0.5em;
-    color: #fff;
+    color: $color-white;
     text-decoration: none;
     font-size: 1.5em;
 }
